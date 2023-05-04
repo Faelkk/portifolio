@@ -1,0 +1,58 @@
+#aside {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #aside {
+    display: flex;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    width: 100vw;
+    transform: translateX(-100%);
+    background: linear-gradient(#e4ebf4, #768fab);
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(3px);
+    transition: all 0.3s ease-in-out;
+  }
+  #aside.active {
+    transform: translateX(0);
+  }
+  .ul-itens-aside {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .ul-itens-aside li {
+    padding: 0.4rem;
+    margin-bottom: 15%;
+  }
+  .ul-itens-aside li a {
+    font-family: "Montserrat", sans-serif;
+    color: #383838;
+    cursor: pointer;
+    padding-bottom: 15px;
+    font-size: 1.6rem;
+  }
+  .ul-itens-aside li a:hover {
+    border-bottom: 1px solid #000;
+    transition: all 0.5s ease-in-out;
+  }
+  #close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 25px;
+  }
+}
+@keyframes show-down {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 0, -30px);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
