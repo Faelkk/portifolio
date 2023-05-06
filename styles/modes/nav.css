@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 2rem;
-  padding: 0 4rem;
+  padding: 5px 4rem;
 }
 .ul-itens {
   display: flex;
@@ -17,10 +17,11 @@
   color: #383838;
   cursor: pointer;
   padding-bottom: 15px;
+  transition: all 0.3s ease-in-out;
 }
 .ul-itens li a:hover {
+  color: aqua;
   border-bottom: 1px solid #000;
-  transition: all 0.5s ease-in-out;
 }
 #title-name {
   font-family: "Poppins", sans-serif;
@@ -30,9 +31,7 @@
   text-decoration: none;
   color: #000;
 }
-#title-name span {
-  color: rgba(55, 185, 122, 0.792);
-}
+
 .menu-mobile {
   display: none;
 }

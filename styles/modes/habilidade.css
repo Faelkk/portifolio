@@ -1,0 +1,33 @@
+.grid-habilidades {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 5%;
+}
+.card-habilidade {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+.card-habilidade img {
+  height: 100px;
+  border-radius: 13px;
+  width: 100px;
+}
+.container-habilidades {
+  margin-top: 10%;
+}
+#title-habilidade {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .card-habilidade img {
+    width: 80px;
+  }
+  #type {
+    width: 80px !important;
+  }
+}

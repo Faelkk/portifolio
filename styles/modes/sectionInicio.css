@@ -1,0 +1,93 @@
+.section-inicio {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 8rem;
+  margin-top: 5%;
+
+  border-radius: 3px;
+}
+
+.container-img img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: #666565;
+  padding: 15px;
+}
+
+.infoAbout h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+}
+#name {
+  font-size: 4rem;
+  color: rgba(9, 138, 237, 0.792);
+}
+.type-writter {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  white-space: nowrap;
+  letter-spacing: 0.15em;
+  animation: typing 0.8s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+.iconContainer {
+  width: 40%;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #333;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    padding: 0;
+    margin: 0 20px;
+  }
+  .section-inicio {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0 40px;
+    align-items: center;
+  }
+
+  .container-img img {
+    width: 100%;
+    height: 100%;
+    order: 2;
+    margin-top: 20px;
+    padding: 0;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  #about-me {
+    font-size: 1.6rem;
+  }
+  #name {
+    font-size: 1.8rem;
+  }
+  .type-writter {
+    font-size: 1.2rem;
+  }
+  .infoAbout {
+    margin-bottom: 5%;
+    order: 1;
+    margin-bottom: 5%;
+    text-align: center;
+  }
+}

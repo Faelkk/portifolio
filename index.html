@@ -13,7 +13,7 @@
       <div class="left">
         <h2 id="title-name">
           <a href="https://github.com/Faelkk" target="_blank"
-            >Rafael <span>Achtenberg </span></a
+            >Rafael Achtenberg</a
           >
         </h2>
       </div>
@@ -21,16 +21,17 @@
         <div class="itens">
           <ul class="ul-itens">
             <li class="li-inicio">
-              <a class="a-start">Inicio</a>
+              <a href="#inicio" class="a-start">Inicio</a>
             </li>
             <li class="li-sobre">
-              <a class="a-sobre">Sobre mim</a>
+              <a class="a-sobre" href="#section-about">Sobre mim</a>
+            </li>
+
+            <li class="li-habilidades">
+              <a class="a-habilidade" href="#habilidades">Habilidades</a>
             </li>
             <li class="li-projetos">
-              <a class="a-projeto">Projetos</a>
-            </li>
-            <li class="li-habilidades">
-              <a class="a-habilidade">Habilidades</a>
+              <a class="a-projeto" href="#projetos">Projetos</a>
             </li>
           </ul>
         </div>
@@ -47,21 +48,122 @@
       <div class="itens-aisde">
         <ul class="ul-itens-aside">
           <li class="li-inicio-aside">
-            <a class="a-start-aside">Inicio</a>
+            <a class="a-start-aside" href="#inicio">Inicio</a>
           </li>
           <li class="li-sobre-aside">
-            <a class="a-sobre-aside">Sobre mim</a>
-          </li>
-          <li class="li-projetos-aside">
-            <a class="a-projeto">Projetos</a>
+            <a class="a-sobre-aside" href="#section-about">Sobre mim</a>
           </li>
           <li class="li-habilidades-aside">
-            <a class="a-habilidade-aside">Habilidades</a>
+            <a class="a-habilidade-aside" href="#habilidades">Habilidades</a>
+          </li>
+          <li class="li-projetos-aside">
+            <a class="a-projeto" href="#projetos">Projetos</a>
           </li>
         </ul>
       </div>
     </aside>
 
+    <div class="section-inicio" id="inicio">
+      <div class="infoAbout">
+        <h2 id="about-me">Olá,Eu sou</h2>
+        <h2 id="name">Rafael</h2>
+        <span class="type-writter"></span>
+      </div>
+      <div class="iconContainer">
+        <div class="container-img">
+          <img src="/imgs/10214655-101653788172_3-s5-v1.png" />
+        </div>
+      </div>
+    </div>
+
+    <div class="section-about" id="section-about">
+      <div class="container-itens">
+        <div class="container-img">
+          <img src="/imgs/laptop wave.png" id="about-img" />
+        </div>
+        <div class="informations">
+          <h2 class="title-about">Sobre mim</h2>
+          <p class="text-about">
+            Me chamo Rafael,eu tenho 15 anos,sou um desenvolvedor Front-end,
+            começei a estudar progamação no final de 2022 e desde já venho cada
+            vez mais buscando ampliar meus conhecimentos sempre,atualmente estou
+            focando no Front-end, mas pretendo expandiar para outras areas,sou
+            uma pessoa resiliente e que adoro trabalho em quipe, estou sempre
+            aberto a criticas para um melhor aprendizado.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <section class="container-habilidades" id="habilidades">
+      <h2 id="title-habilidade">Minhas Habilidades</h2>
+      <div class="grid-habilidades">
+        <div class="card-habilidade">
+          <img src="/imgs/html5-svgrepo-com.svg" />
+        </div>
+        <div class="card-habilidade">
+          <img
+            src="/imgs/typescript-svgrepo-com.svg"
+            style="width: 90px"
+            id="type"
+          />
+        </div>
+
+        <div class="card-habilidade">
+          <img src="/imgs/javascript-155-svgrepo-com.svg" />
+        </div>
+        <div class="card-habilidade">
+          <img src="/imgs/css3-02-svgrepo-com.svg" style="height: 90px" />
+        </div>
+
+        <div class="card-habilidade">
+          <img src="/imgs/git-svgrepo-com.svg" />
+        </div>
+        <div class="card-habilidade">
+          <img src="/imgs/github-142-svgrepo-com.svg" />
+        </div>
+      </div>
+    </section>
+
+    <section class="projetos" id="projetos">
+      <h2 id="title-projetos">Meus projetos</h2>
+      <div class="grid-container">
+        <div class="container-card">
+          <span class="span-title">Valorant</span>
+          <div class="card-grid" id="valorant">
+            <button class="btn-verMais">Ver detalhes</button>
+          </div>
+        </div>
+        <div class="container-card">
+          <span class="span-title">Pokedex-modal</span>
+          <div class="card-grid" id="pokedex">
+            <button class="btn-verMais">Ver detalhes</button>
+          </div>
+        </div>
+        <div class="container-card">
+          <span class="span-title">Em breve</span>
+          <div class="card-grid">
+            <button class="btn-verMais">Ver detalhes</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-l">
+        <a class="text-footer" href="https://github.com/Faelkk" target="_blank"
+          >Feito por <span class="color">Rafael</span></a
+        >
+      </div>
+      <div class="footer-r">
+        <a href="https://github.com/Faelkk">
+          <img src="/imgs/github-142-svgrepo-com.svg"
+        /></a>
+        <a href="https://www.instagram.com/achten.rafael/">
+          <img src="/imgs/instagram-167-svgrepo-com.svg"
+        /></a>
+      </div>
+    </footer>
     <script src="/js/index.js" type="module"></script>
   </body>
 </html>
