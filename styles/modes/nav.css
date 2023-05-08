@@ -4,6 +4,7 @@
   align-items: center;
   margin: 0 2rem;
   padding: 5px 4rem;
+  opacity: 0;
 }
 .ul-itens {
   display: flex;
