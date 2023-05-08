@@ -26,6 +26,9 @@ li {
 a {
   text-decoration: none;
 }
+button {
+  border: none;
+}
 @media (max-width: 768px) {
   body {
     height: 100vh;

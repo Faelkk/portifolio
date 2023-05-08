@@ -33,26 +33,6 @@
 .iconContainer {
   width: 40%;
 }
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: #333;
-  }
-}
-
 @media (max-width: 930px) {
   .nav {
     padding: 0;
@@ -139,5 +119,23 @@
 @media (max-width: 500px) {
   .text-about {
     font-size: 1.3rem;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #333;
   }
 }

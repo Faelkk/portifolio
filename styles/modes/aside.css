@@ -1,7 +1,3 @@
-#aside {
-  display: none;
-}
-
 @media (max-width: 768px) {
   #aside {
     position: absolute;
