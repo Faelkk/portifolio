@@ -14,13 +14,12 @@
     backdrop-filter: blur(3px);
     z-index: -2;
     display: flex;
-    opacity: 0;
-    transform: translateX(100%);
+    transform: translateX(-100%);
   }
   #aside.active {
     opacity: 1;
     z-index: 3;
-    transform: translateX(0%);
+    transform: translateX(0);
     transition: all 0.3s ease-in-out;
   }
   .ul-itens-aside {
@@ -41,7 +40,6 @@
   }
   .ul-itens-aside li a:hover {
     border-bottom: 1px solid #000;
-    transition: all 0.5s ease-in-out;
   }
   #close {
     position: absolute;

@@ -1,11 +1,10 @@
-export function animaTexto() {
-  const texto = document.querySelector(".type-writter");
-  const stringTexto = "Front-end Developer |";
+import constantesJs from "./consts.js";
+export default function animaTexto() {
   let index = 0;
   function typeText() {
-    if (index < stringTexto.length) {
-      texto.innerHTML += stringTexto.charAt(index);
-      index++;
+    if (constantesJs.index < constantesJs.stringTexto.length) {
+      constantesJs.texto.innerHTML += stringTexto.charAt(index);
+      constantesJs.index++;
       setTimeout(typeText, 70);
     } else {
       clearTimeout(typeText);

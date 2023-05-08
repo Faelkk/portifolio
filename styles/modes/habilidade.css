@@ -16,6 +16,7 @@
 }
 .container-habilidades {
   margin-top: 10%;
+  opacity: 0;
 }
 #title-habilidade {
   text-align: center;

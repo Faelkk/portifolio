@@ -7,7 +7,7 @@
 
     <title>Portifolio</title>
     <link rel="stylesheet" href="/styles/style.css" />
-    <link rel="icon" href="/imgs/studying.png" />
+    <link rel="icon" href="/imgs/favicon-16x16.png" />
   </head>
   <body>
     <nav class="nav">
@@ -77,7 +77,7 @@
       </div>
     </div>
 
-    <div class="section-about" id="section-about">
+    <div class="section-about" id="section-about" data-type="animation-js">
       <div class="container-itens">
         <div class="container-img">
           <img src="/imgs/laptop wave.png" id="about-img" />
@@ -96,7 +96,11 @@
       </div>
     </div>
 
-    <section class="container-habilidades" id="habilidades">
+    <section
+      class="container-habilidades"
+      id="habilidades"
+      data-type="animation-js"
+    >
       <h2 id="title-habilidade">Minhas Habilidades</h2>
       <div class="grid-habilidades">
         <div class="card-habilidade">
@@ -126,31 +130,36 @@
       </div>
     </section>
 
-    <section class="projetos" id="projetos">
+    <div class="container-animation"></div>
+    <section class="projetos" id="projetos" data-type="animation-js">
       <h2 id="title-projetos">Meus projetos</h2>
       <div class="grid-container">
         <div class="container-card">
           <span class="span-title">Valorant</span>
           <div class="card-grid" id="valorant">
-            <button class="btn-verMais">Ver detalhes</button>
+            <button class="btn-verMais">
+              <a href="https://valorant-site.vercel.app/">Ver detalhes</a>
+            </button>
           </div>
         </div>
         <div class="container-card">
           <span class="span-title">Pokedex-modal</span>
           <div class="card-grid" id="pokedex">
-            <button class="btn-verMais">Ver detalhes</button>
+            <button class="btn-verMais">
+              <a href="https://pokedex-modal.vercel.app/">Ver detalhes</a>
+            </button>
           </div>
         </div>
         <div class="container-card">
           <span class="span-title">Em breve</span>
           <div class="card-grid">
-            <button class="btn-verMais">Ver detalhes</button>
+            <button class="btn-verMais"><a>Ver detalhes</a></button>
           </div>
         </div>
       </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" data-type="animation-js">
       <div class="footer-l">
         <a class="text-footer" href="https://github.com/Faelkk" target="_blank"
           >Feito por <span class="color">Rafael</span></a

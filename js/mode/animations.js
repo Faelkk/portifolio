@@ -1,19 +1,30 @@
-import { animaTexto } from "./typeWritter.js";
-
+import animaTexto from "./typeWritter.js";
+import constantesJs from "./consts.js";
 export function animationJs() {
-  let a;
-  const nav = document.querySelector(".nav");
-  const sectionInicio = document.querySelector(".section-inicio");
-  const body = document.querySelector("body");
-  window.addEventListener("DOMContentLoaded", () => {
-    nav.classList.add("active");
-    sectionInicio.classList.add("active");
-    body.style.overflowX = "hidden";
-    a = true;
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const addActiveClass = () => {
+          entry.target.classList.add("active");
+          observer.unobserve(entry.target);
+        };
+
+        setTimeout(addActiveClass, 0);
+      }
+    });
   });
-  setTimeout(() => {
-    if (a === true) {
+
+  constantesJs.sections.forEach((section) => {
+    observer.observe(section);
+  });
+
+  window.addEventListener("DOMContentLoaded", () => {
+    constantesJs.nav.classList.add("active");
+    constantesJs.sectionInicio.classList.add("active");
+    constantesJs.body.style.overflowX = "hidden";
+
+    setTimeout(() => {
       animaTexto();
-    }
-  }, 570);
+    }, 570);
+  });
 }

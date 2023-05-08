@@ -1,6 +1,15 @@
 .nav.active {
   animation: slideDown 0.5s ease-in-out forwards;
 }
+.section-inicio.active,
+.container-habilidades.active {
+  position: relative;
+  animation: slide-in 0.5s ease-in-out forwards;
+}
+.section-about.active,
+.projetos.active {
+  animation: show-left 0.5s ease-in-out forwards;
+}
 
 @keyframes show-left {
   from {
@@ -11,10 +20,6 @@
     opacity: 1;
     transform: translate3d(0, 0, 0);
   }
-}
-.section-inicio.active {
-  position: relative;
-  animation: slide-in 0.5s ease-in-out forwards;
 }
 
 @keyframes slide-in {
@@ -28,9 +33,6 @@
   }
 }
 
-.section-about {
-  animation: show-left 0.5s ease-in-out;
-}
 @keyframes slideDown {
   0% {
     opacity: 0.3;

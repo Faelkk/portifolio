@@ -3,7 +3,7 @@
   justify-content: space-between;
   padding: 15px 8rem;
   margin-top: 5%;
-  transform: translateX(100%);
+  opacity: 0;
   border-radius: 3px;
 }
 

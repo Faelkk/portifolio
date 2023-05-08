@@ -4,6 +4,7 @@
   flex-direction: column;
   align-items: center;
   padding-bottom: 5%;
+  opacity: 0;
 }
 
 #title-projetos {
@@ -31,16 +32,19 @@ button {
   border: none;
 }
 .btn-verMais {
-  font-family: "Montserrat", sans-serif;
   background: rgb(208, 65, 65);
   padding: 10px;
   width: 40%;
-  color: #fff;
+
   border-radius: 3px;
   position: absolute;
   bottom: 20px;
   font-weight: bold;
   cursor: pointer;
+}
+.btn-verMais a {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
 }
 
 .span-title {

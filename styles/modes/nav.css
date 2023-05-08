@@ -4,7 +4,6 @@
   align-items: center;
   margin: 0 2rem;
   padding: 5px 4rem;
-  transform: translateY(-100%);
 }
 .ul-itens {
   display: flex;
@@ -18,10 +17,9 @@
   color: #383838;
   cursor: pointer;
   padding-bottom: 15px;
-  transition: all 0.3s ease-in-out;
 }
 .ul-itens li a:hover {
-  color: aqua;
+  color: rgb(10, 113, 113);
   border-bottom: 1px solid #000;
 }
 #title-name {
