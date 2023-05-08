@@ -6,7 +6,7 @@ export function animaTexto() {
     if (index < stringTexto.length) {
       texto.innerHTML += stringTexto.charAt(index);
       index++;
-      setTimeout(typeText, 100);
+      setTimeout(typeText, 70);
     } else {
       clearTimeout(typeText);
     }

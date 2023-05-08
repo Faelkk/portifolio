@@ -25,7 +25,45 @@
 #about-img {
   background: #064290;
 }
+@media (min-width: 1700px) {
+  .text-about {
+    font-size: 1.6rem;
+  }
+}
 
+@media (max-width: 1080px) {
+  .informations {
+    width: 40%;
+  }
+}
+@media (max-width: 930px) {
+  .container-itens {
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+    margin: 0 40px;
+  }
+  .container-img {
+    display: flex;
+    justify-content: center;
+  }
+  #about-img {
+    width: 50%;
+    padding: 0;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background: transparent;
+  }
+  .informations {
+    width: 100%;
+  }
+  .section-about {
+    margin-top: 2%;
+  }
+  .title-about {
+    font-size: 2.5rem;
+  }
+}
 @media (max-width: 768px) {
   .container-itens {
     flex-direction: column;

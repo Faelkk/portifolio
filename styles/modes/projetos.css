@@ -66,12 +66,18 @@ button {
   flex-direction: column;
   gap: 20px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
   .grid-container {
     display: flex;
     flex-direction: column;
   }
   .projetos {
     margin-bottom: 5%;
+  }
+  .span-title {
+    font-size: 1.5rem;
+  }
+  .btn-verMais {
+    font-size: 1rem;
   }
 }
